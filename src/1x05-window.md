@@ -67,7 +67,7 @@ let container = cascade! {
 
 ## Creating the window
 
-Next we we will create the `Toplevel` window for this application, and attach our container to the window. We will set a title, connect the event to be called when window is deleted, and also set the default icon for our application. The `Toplevel` window is the main window of your application. A window can only have one widget attached to it, which we will assign with the `.add()` method. The `.set_title()` method will set the title of your application. The `.connect_delete_event` method is invoked whenever the window is destroyed, and we will program this to call `gtk::main_quit()` to stop the mainloop, thereby having `gtk::main()` return, which has our application quit.
+Next we will create the `Toplevel` window for this application, and attach our container to the window. We will set a title, connect the event to be called when window is deleted, and also set the default icon for our application. The `Toplevel` window is the main window of your application. A window can only have one widget attached to it, which we will assign with the `.add()` method. The `.set_title()` method will set the title of your application. The `.connect_delete_event` method is invoked whenever the window is destroyed, and we will program this to call `gtk::main_quit()` to stop the mainloop, thereby having `gtk::main()` return, which has our application quit.
 
 
 ```rust
